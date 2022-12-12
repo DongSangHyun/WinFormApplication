@@ -48,7 +48,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Name = "Form02_MDITest";
-            this.Text = "Form02_MDITest";
+            this.Text = "MDI_TEST2";
             this.ResumeLayout(false);
 
         }

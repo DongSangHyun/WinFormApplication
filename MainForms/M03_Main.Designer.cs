@@ -47,9 +47,13 @@
             this.stsUserName = new System.Windows.Forms.ToolStripStatusLabel();
             this.stsNowDateTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.myTabContolr1 = new Assamble.MyTabContolr();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            this.myTabContolr1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -220,15 +224,46 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // myTabContolr1
+            // 
+            this.myTabContolr1.Controls.Add(this.tabPage1);
+            this.myTabContolr1.Controls.Add(this.tabPage2);
+            this.myTabContolr1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.myTabContolr1.Location = new System.Drawing.Point(0, 124);
+            this.myTabContolr1.Name = "myTabContolr1";
+            this.myTabContolr1.SelectedIndex = 0;
+            this.myTabContolr1.Size = new System.Drawing.Size(906, 393);
+            this.myTabContolr1.TabIndex = 3;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(898, 367);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(192, 74);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // M03_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(906, 567);
+            this.Controls.Add(this.myTabContolr1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
-            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "M03_Main";
             this.Text = "EZ_Dev 1.0";
@@ -241,6 +276,7 @@
             this.toolStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.myTabContolr1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,5 +302,8 @@
         private System.Windows.Forms.ToolStripMenuItem M_TEST;
         private System.Windows.Forms.ToolStripMenuItem Form01_MDITest;
         private System.Windows.Forms.ToolStripMenuItem Form02_MDITest;
+        private Assamble.MyTabContolr myTabContolr1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
     }
 }
